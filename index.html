@@ -1,1039 +1,574 @@
 
-<!DOCTYPE HTML>
-<html class="no-js" >
+<!DOCTYPE html>
+<!-- by LyricEic -->
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<meta name="renderer" content="webkit">
-<meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title itemprop="name">LyricEic </title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F03f816246d3f28add7b1ee99da7d63527bf21493.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661153849&t=e70be40386cc10ff9dab683af56e0d8e"/> 
 <meta http-equiv="x-dns-prefetch-control" content="on">
-<link rel="dns-prefetch" href="//cdn.c0lacan.net" />
-<title>c0lacan's Blog</title>
-<meta property="og:title" content="c0lacan's Blog" />
-<meta property="og:site_name" content="c0lacan's Blog" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="A quiet observer." />
-<meta property="og:url" content="http://c0lacan.net" /><meta property="og:image" content="https://cdn.c0lacan.net/2019/07/67379432_p0.jpg?imageView2/2/w/640/q/75" /><meta name="description" content="A quiet observer." />
-<meta name="keywords" content="鶸,耳机,PHP,Javascript,Vue,Python,CCNA" />
-<meta name="template" content="Mirages" />
-<link rel="alternate" type="application/rss+xml" title="c0lacan's Blog &raquo; RSS 2.0" href="http://c0lacan.net/feed/" />
-<link rel="alternate" type="application/rdf+xml" title="c0lacan's Blog &raquo; RSS 1.0" href="http://c0lacan.net/feed/rss/" />
-<link rel="alternate" type="application/atom+xml" title="c0lacan's Blog &raquo; ATOM 1.0" href="http://c0lacan.net/feed/atom/" />
-<style>
-.post-card{
-    border-radius: 20px !important;
-}
-.post-card-mask{
-    border-radius: 20px !important;
-}
-img {
- border-radius: 20px;
-}
-</style><style type="text/css">
-        /* Lora */
-    @font-face {
-        font-family: 'Lora';
-        font-style: normal;
-        font-weight: 400;
-        font-display: fallback;
-        src:
-                local('Lora Regular'),
-                local('Lora-Regular'),
-                url(http://c0lacan.net/usr/themes/Mirages/fonts/Lora/400.woff2) format('woff2'),
-                url(http://c0lacan.net/usr/themes/Mirages/fonts/Lora/400.woff) format('woff');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    @font-face {
-        font-family: 'Lora';
-        font-style: normal;
-        font-weight: 700;
-        font-display: fallback;
-        src:
-                local('Lora Bold'),
-                local('Lora-Bold'),
-                url(http://c0lacan.net/usr/themes/Mirages/fonts/Lora/700.woff2) format('woff2'),
-                url(http://c0lacan.net/usr/themes/Mirages/fonts/Lora/700.woff) format('woff');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
+<meta name='robots' content='max-image-preview:large' />
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://zankyo.cc/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 </style>
-<link rel="stylesheet" href="http://c0lacan.net/usr/themes/Mirages/css/7.10.2dev4/mirages.min.css">
-<script type="text/javascript">
-    window['LocalConst'] = {
-        THEME_VERSION: "7.10.2.DEV4(20201205A)",
-        BUILD: 1418,
-        BASE_SCRIPT_URL: "http://c0lacan.net/usr/themes/Mirages/",
-        IS_MOBILE: false,
-        IS_PHONE: false,
-        IS_TABLET: false,
-        HAS_LOGIN: false,
-        IS_HTTPS: false,
-        ENABLE_PJAX: true,
-        ENABLE_WEBP: false,
-        SHOW_TOC: false,
-        ENABLE_IMAGE_SIZE_OPTIMIZE: false,
-        THEME_COLOR: '#88629e',
-        DISQUS_SHORT_NAME: '',
-        COMMENT_SYSTEM: 0,
-        OWO_API: 'http://c0lacan.net/usr/themes/Mirages/js/7.10.2dev4/OwO.json',
-        COMMENT_SYSTEM_DISQUS: 1,
-        COMMENT_SYSTEM_DUOSHUO: 2,
-        COMMENT_SYSTEM_EMBED: 0,
-        PJAX_LOAD_STYLE: 1,
-        PJAX_LOAD_STYLE_SIMPLE: 0,
-        PJAX_LOAD_STYLE_CIRCLE: 1,
-        AUTO_NIGHT_SHIFT_FROM: 22,
-        AUTO_NIGHT_SHIFT_TO: 5,
-        USE_MIRAGES_DARK: false,
-        PREFERS_DARK_MODE: false,
-        LIGHT_THEME_CLASS: "theme-white",
-        TOC_AT_LEFT: false,
-        SERIF_LOAD_NOTICE: '加载 Serif 字体可能需要 10 秒钟左右，请耐心等待',
-        ROOT_FONT_SIZE: '100',
-        BIAOQING_PAOPAO_PATH: '',
-        BIAOQING_ARU_PATH: '',
-        CDN_TYPE_OTHERS: -1,
-        CDN_TYPE_QINIU: 1,
-        CDN_TYPE_UPYUN: 2,
-        CDN_TYPE_LOCAL: 3,
-        CDN_TYPE_ALIYUN_OSS: 4,
-        CDN_TYPE_QCLOUD_CI: 5,
-        KEY_CDN_TYPE: '',
-        UPYUN_SPLIT_TAG: '!',
-        COMMENTS_ORDER: 'ASC',
-        ENABLE_MATH_JAX: false,
-        MATH_JAX_USE_DOLLAR: false,
-        ENABLE_FLOW_CHART: false,
-        ENABLE_MERMAID: false,
-        ENABLE_STATE: 'YzBsYWNhbi5uZXQvZTE4MjE1NTE6ZTJiNTJkZWQ6ZWQ5MmNmZTQxZmRhNDM0ZDE2ZmI0OTU3YTBjMGQwMzI=',
-        HIDE_CODE_LINE_NUMBER: false,
-        TRIM_LAST_LINE_BREAK_IN_CODE_BLOCK: true    };
-    var Mlog = function (message) {
-            };
-                    LocalConst.BIAOQING_PAOPAO_PATH = 'http://c0lacan.net/usr/plugins/Mirages/biaoqing/paopao/';
-        LocalConst.BIAOQING_ARU_PATH = 'http://c0lacan.net/usr/plugins/Mirages/biaoqing/aru/';
-        var BIAOQING_PAOPAO_PATH = LocalConst.BIAOQING_PAOPAO_PATH;
-        var BIAOQING_ARU_PATH = LocalConst.BIAOQING_ARU_PATH;
-                LocalConst.KEY_CDN_TYPE = 'mirages-cdn-type';
-        LocalConst.UPYUN_SPLIT_TAG = '!';
-    </script>
-    <script>
-        var hour = new Date().getHours();
-        if (hour <= LocalConst.AUTO_NIGHT_SHIFT_TO || hour >= LocalConst.AUTO_NIGHT_SHIFT_FROM) {
-            LocalConst.USE_MIRAGES_DARK = true;
-        }
-    </script>
-
-    <link rel="shortcut icon" href="https://c0lacan.net/favicon.ico">
-
-
-
-<script type="text/javascript">
-    var autoHideElements = {};
-    var CSS = function (css) {
-        var link = document.createElement('link');
-        link.setAttribute('rel', 'stylesheet');
-        link.href = css;
-        document.head.appendChild(link);
-    };
-    var STYLE = function (style, type) {
-        type = type || 'text/css';
-        var s = document.createElement('style');
-        s.type = type;
-        s.textContent = style;
-        document.head.appendChild(s);
-    };
-    var JS = function (js, async) {
-        async = async || false;
-        var sc = document.createElement('script'), s = document.scripts[0];
-        sc.src = js; sc.async = async;
-        s.parentNode.insertBefore(sc, s);
-    };
-    var registAutoHideElement = function (selector) {
-        var tmp = autoHideElements[selector];
-        if (typeof(tmp) !== 'undefined') {
-            return;
-        }
-        var element = document.querySelector(selector);
-        if (element && typeof(Headroom) !== "undefined") {
-            var headroom = new Headroom(element, {
-                tolerance: 5,
-                offset : 5,
-                classes: {
-                    initial: "show",
-                    pinned: "show",
-                    unpinned: "hide"
-                }
-            });
-            headroom.init();
-            autoHideElements[selector] = headroom;
-        }
-    };
-    var getImageAddon = function (cdnType, width, height) {
-        if (!LocalConst.ENABLE_IMAGE_SIZE_OPTIMIZE) {
-            return "";
-        }
-        if (cdnType == LocalConst.CDN_TYPE_LOCAL || cdnType == LocalConst.CDN_TYPE_OTHERS) {
-            return "";
-        }
-        var addon = "?";
-        if (cdnType == LocalConst.CDN_TYPE_UPYUN) {
-            addon = LocalConst.UPYUN_SPLIT_TAG;
-        }
-        var ratio = window.devicePixelRatio || 1;
-        width = width || window.innerWidth;
-        height = height || window.innerHeight;
-        width = width || 0;
-        height = height || 0;
-        if (width == 0 && height == 0) {
-            return "";
-        }
-        var format = "";
-        if (LocalConst.ENABLE_WEBP) {
-            if (cdnType == LocalConst.CDN_TYPE_ALIYUN_OSS) {
-                format = "/format,webp"
-            } else {
-                format = "/format/webp";
-            }
-        }
-        if (width >= height) {
-            if (cdnType == LocalConst.CDN_TYPE_UPYUN) {
-                addon += "/fw/" + parseInt(width * ratio) + "/quality/75" + format;
-            } else if(cdnType == LocalConst.CDN_TYPE_ALIYUN_OSS) {
-                addon += "x-oss-process=image/resize,w_" + parseInt(width * ratio) + "/quality,Q_75" + format;
-            } else {
-                addon += "imageView2/2/w/" + parseInt(width * ratio) + "/q/75" + format;
-            }
-        } else {
-            if (cdnType == LocalConst.CDN_TYPE_UPYUN) {
-                addon += "/fh/" + parseInt(width * ratio) + "/quality/75" + format;
-            } else if(cdnType == LocalConst.CDN_TYPE_ALIYUN_OSS) {
-                addon += "x-oss-process=image/resize,h_" + parseInt(width * ratio) + "/quality,Q_75" + format;
-            } else {
-                addon += "imageView2/2/h/" + parseInt(height * ratio) + "/q/75" + format;
-            }
-        }
-        return addon;
-    };
-    var getBgHeight = function(windowHeight, bannerHeight, mobileBannerHeight){
-        windowHeight = windowHeight || 560;
-        if (windowHeight > window.screen.availHeight) {
-            windowHeight = window.screen.availHeight;
-        }
-        bannerHeight = bannerHeight.trim();
-        mobileBannerHeight = mobileBannerHeight.trim();
-        if (window.innerHeight > window.innerWidth) {
-            bannerHeight = parseFloat(mobileBannerHeight);
-        } else {
-            bannerHeight = parseFloat(bannerHeight);
-        }
-        bannerHeight = Math.round(windowHeight * bannerHeight / 100);
-        return bannerHeight;
-    };
-    var registLoadBanner = function () {
-        if (window.asyncBannerLoadNum >= 0) {
-            window.asyncBannerLoadNum ++;
-            Mlog("Loading Banner: " + window.asyncBannerLoadNum);
-        }
-    };
-    var remove = function (element) {
-        if (element) {
-            if (typeof element['remove'] === 'function') {
-                element.remove();
-            } else if (element.parentNode) {
-                element.parentNode.removeChild(element);
-            }
-        }
-    };
-    var loadBannerDirect = function (backgroundImage, backgroundPosition, wrap, cdnType, width, height) {
-        var background = wrap.querySelector('.blog-background');
-        var imageSrc = backgroundImage + getImageAddon(cdnType, width, height);
-
-        Mlog("Start Loading Banner Direct... url: " + imageSrc + "  cdnType: " + cdnType);
-
-        if (typeof(backgroundPosition) === 'string' && backgroundPosition.length > 0) {
-            background.style.backgroundPosition = backgroundPosition;
-        }
-
-        background.style.backgroundImage = 'url("' + imageSrc + '")';
-    };
-    var loadBanner = function (img, backgroundImage, backgroundPosition, wrap, cdnType, width, height, blured) {
-        var background = wrap.querySelector('.blog-background');
-        var container = wrap.querySelector('.lazyload-container');
-
-        if (!background) {
-            console.warn("background is null", background);
-            return;
-        }
-        if (!container) {
-            console.warn("container is null", container);
-            return;
-        }
-
-        var imageSrc = backgroundImage + getImageAddon(cdnType, width, height);
-
-        Mlog("Start Loading Banner... url: " + imageSrc + "  cdnType: " + cdnType);
-
-
-        background.classList.add("loading");
-
-        remove(img);
-        if (typeof(backgroundPosition) === 'string' && backgroundPosition.length > 0) {
-            container.style.backgroundPosition = backgroundPosition;
-            background.style.backgroundPosition = backgroundPosition;
-        }
-        container.style.backgroundImage = 'url("' + img.src + '")';
-        container.classList.add('loaded');
-
-        blured = blured || false;
-        if (blured) {
-            return;
-        }
-
-        // load Src background image
-        var largeImage = new Image();
-        largeImage.src = imageSrc;
-        largeImage.onload = function() {
-            remove(this);
-            if (typeof imageLoad !== 'undefined' && imageLoad >= 1) {
-                background.classList.add('bg-failed');
-            } else {
-                background.style.backgroundImage = 'url("' + imageSrc + '")';
-                background.classList.remove('loading');
-                container.classList.remove('loaded');
-            }
-            setTimeout(function () {
-                remove(container);
-                if (window.asyncBannerLoadCompleteNum >= 0) {
-                    window.asyncBannerLoadCompleteNum ++;
-                    Mlog("Loaded Banner: " + window.asyncBannerLoadCompleteNum);
-                    if (window.asyncBannerLoadCompleteNum === window.asyncBannerLoadNum) {
-                        window.asyncBannerLoadNum = -1170;
-                        window.asyncBannerLoadCompleteNum = -1170;
-                        $('body').trigger("ajax-banner:done");
-                    } else if (window.asyncBannerLoadCompleteNum > window.asyncBannerLoadNum) {
-                        console.error("loaded num is large than load num.");
-                        setTimeout(function () {
-                            window.asyncBannerLoadNum = -1170;
-                            window.asyncBannerLoadCompleteNum = -1170;
-                            $('body').trigger("ajax-banner:done");
-                        }, 1170);
-                    }
-                }
-            }, 1001);
-        };
-    };
-    var loadPrefersDarkModeState = function () {
-        if (typeof window.matchMedia === 'function') {
-            LocalConst.PREFERS_DARK_MODE = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        }
-    };
+<link rel='stylesheet' id='hermit-css'  href='https://zankyo.cc/wp-content/plugins/hermit/assets/css/3.1.6/hermit.css?ver=6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='saukra_css-css'  href='https://zankyo.cc/wp-content/themes/Sakura/style.css?ver=3.3.2' type='text/css' media='all' />
+<script type='text/javascript' id='hermit-js-extra'>
+/* <![CDATA[ */
+var hermit = {"url":"https:\/\/zankyo.cc\/wp-content\/plugins\/hermit\/assets\/swf\/","ajax_url":"https:\/\/zankyo.cc\/wp-admin\/admin-ajax.php","text_tips":"\u70b9\u51fb\u64ad\u653e\u6216\u6682\u505c","remain_time":"10","debug":"0","version":"3.1.6","album_source":"0"};
+/* ]]> */
 </script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/plugins/hermit/assets/js/3.1.6/hermit.js?ver=3.1.6' id='hermit-js'></script>
+<link rel="https://api.w.org/" href="https://zankyo.cc/wp-json/" /><!-- Analytics by WP Statistics v13.2.4.1 - https://wp-statistics.com/ -->
 <style type="text/css">
-    body, button, input, optgroup, select, textarea {
-        font-family: 'Mirages Custom', 'Merriweather', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif;
-    }
-    .github-box, .github-box .github-box-title h3 {
-        font-family: 'Mirages Custom', 'Merriweather', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif !important;
-    }
-    .aplayer {
-        font-family: 'Mirages Custom', 'Myriad Pro', 'Myriad Set Pro', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  Helvetica, arial, sans-serif !important;
-    }
-    /* Serif */
-    body.content-lang-en.content-serif .post-content {
-        font-family: 'Lora', 'PT Serif', 'Source Serif Pro', Georgia, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  serif;
-    }
-    body.content-lang-en.content-serif.serif-fonts .post-content {
-        font-family: 'Lora', 'PT Serif', 'Source Serif Pro', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei',  serif;
-    }
-    body.serif-fonts .post-content, body.serif-fonts .blog-title {
-        font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei',  Georgia, serif;
-    }
+.site-top .lower nav {display: block !important;}
+.author-profile i , .post-like a , .post-share .show-share , .sub-text , .we-info a , span.sitename , .post-more i:hover , #pagination a:hover , .post-content a:hover , .float-content i:hover{ color: #fa7298 }
+.feature i , /*.feature-title span ,*/ .download , .navigator i:hover , .links ul li:before , .ar-time i , span.ar-circle , .object , .comment .comment-reply-link , .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after { background: #fa7298 }
+::-webkit-scrollbar-thumb { background: #fa7298 }
+.download , .navigator i:hover , .link-title , .links ul li:hover , #pagination a:hover , .comment-respond input[type='submit']:hover { border-color: #fa7298 }
+.entry-content a:hover , .site-info a:hover , .comment h4 a , #comments-navi a.prev , #comments-navi a.next , .comment h4 a:hover , .site-top ul li a:hover , .entry-title a:hover , #archives-temp h3 , span.page-numbers.current , .sorry li a:hover , .site-title a:hover , i.iconfont.js-toggle-search.iconsearch:hover , .comment-respond input[type='submit']:hover, blockquote:before, blockquote:after { color: #fa7298 }
+
+#aplayer-float .aplayer-lrc-current { color: #fa7298 !important}
+
+.is-active-link::before, .commentbody:not(:placeholder-shown)~.input-label, .commentbody:focus~.input-label {
+    background-color: #fa7298 !important
+}
+
+.commentbody:focus {
+    border-color: #fa7298 !important
+}
+
+.insert-image-tips:hover, .insert-image-tips-hover{ 
+    color: #fa7298;
+    border: 1px solid #fa7298}
+
+.site-top ul li a:after {
+    background-color: #fa7298}
+
+.scrollbar,.butterBar-message {
+    background: #fa7298 !important
+}
+
+#nprogress .spinner-icon{ 
+    border-top-color: #fa7298; 
+    border-left-color: #fa7298}
+
+#nprogress .bar {
+    background: #fa7298}
+
+.changeSkin-gear,.toc{
+    background:rgba(255,255,255,0.8);
+}
+
+.entry-content th {
+    background-color: #fa7298}
+
+.feature img{ border-radius: 0px; !important; }
+.feature i { border-radius: 0px; !important; }
+.centerbg{background-image: url("https://zankyo.cc/wp-content/themes/Sakura/cover/gallery/1519431980388.jpg");background-position: center center;background-attachment: inherit;}
+.rotating {
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
 </style>
-<style type="text/css">
-    /** 页面样式调整 */
-        .post-buttons a {
-        width: -webkit-calc(100% / 2 - .3125rem);
-        width: calc(100% / 2 - .3125rem);
-    }
-    
-    </style>
-<!-- 主题主色调 -->
-<style type="text/css">
-    /* Color - Custom */
-    body.color-custom a {
-        color: #88629e;
-    }
-    body.color-custom *::selection {
-        background: #88629e;
-        color: #fff;
-    }
-    body.color-custom #index article a, body.color-custom #post article a, body.color-custom #archive article a {
-        color: #88629e;
-    }
-    body.color-custom #footer a:after, body.color-custom #header .nav li a:after, body.color-custom #post .post-meta a:after, body.color-custom #index .comments a:after, body.color-custom #index .post-content a:after, body.color-custom #post .post-content a:after, body.color-custom #archive .post-content a:after, body.color-custom #archive .comments a:after, body.color-custom #comments a:after {
-        border-color: #88629e;
-    }
-    body.color-custom .post-content a {
-        color: #88629e;
-    }
-    body.color-custom .post-near {
-        color: #88629e;
-    }
-    body.color-custom #nav .search-box .search{
-        color: #88629e;
-    }
-    body.color-custom #comments .comment-list a, body.color-custom #comments .respond a  {
-        color: #88629e;
-    }
-    body.color-custom #comments .widget-title {
-        color: #88629e;
-    }
-    body.color-custom .color-main {
-        color: #88629e !important;
-    }
-    body.color-custom #disqus_thread a {
-        color: #88629e;
-    }
-    body.color-custom #footer a {
-        color: #88629e;
-    }
-    body.color-custom .github-box .github-box-download .download:hover{
-        border-color: #88629e !important;
-        background-color: rgba(136, 98, 158, 0.4) !important;
-    }
-    body.color-custom .sp-progress {
-        background: linear-gradient(45deg, rgba(136, 98, 158, 0), rgba(136, 98, 158, 0.1) 25%, rgba(136, 98, 158, 0.35) 50%, rgb(136, 98, 158) 75%, rgba(136, 98, 158, 0.1));
-    }
 
-    li.index-menu-item.current>a.index-menu-link, body.color-custom li.index-menu-item.current>a.index-menu-link{
-        color: #88629e;
-        border-left: .125rem solid #88629e;
-    }
 
-    body.color-custom .post-content .content-file:hover .content-file-icon,
-    body.color-custom .post-content .content-file:hover .content-file-filename,
-    body.color-custom .comment-content .content-file:hover .content-file-icon,
-    body.color-custom .comment-content .content-file:hover .content-file-filename,
-    body.color-custom.theme-sunset .post-content .content-file:hover .content-file-icon,
-    body.color-custom.theme-sunset .post-content .content-file:hover .content-file-filename,
-    body.color-custom.theme-sunset .comment-content .content-file:hover .content-file-icon,
-    body.color-custom.theme-sunset .comment-content .content-file:hover .content-file-filename {
-        color: #88629e;
-    }
-
-    body.color-custom .post-content .content-file:hover,
-    body.color-custom .comment-content .content-file:hover,
-    body.color-custom.theme-sunset .post-content .content-file:hover,
-    body.color-custom.theme-sunset .comment-content .content-file:hover {
-        border-color: #88629e;
-    }
-
-    /* Color - Custom Dark */
-    body.theme-dark a {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom *::selection {
-        background: #88629e;
-        color: #fff;
-    }
-    body.theme-dark.color-custom #index article a, body.theme-dark.color-custom #post article a, body.theme-dark.color-custom #archive article a {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom #footer a:after,
-    body.theme-dark.color-custom #header .nav li a:after,
-    body.theme-dark.color-custom #post .post-meta a:after,
-    body.theme-dark.color-custom #index .comments a:after,
-    body.theme-dark.color-custom #index .post-content a:after,
-    body.theme-dark.color-custom #post .post-content a:after,
-    body.theme-dark.color-custom #archive .post-content a:after,
-    body.theme-dark.color-custom #archive .comments a:after,
-    body.theme-dark.color-custom #comments a:after
-    {
-        border-color: #88629e;
-    }
-    body.theme-dark.color-custom .post-content a {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom .post-near {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom #nav .search-box .search {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom #comments .comment-list a, body.theme-dark.color-custom #comments .respond a  {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom #comments .widget-title {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom .color-main {
-        color: #88629e !important;
-    }
-    body.theme-dark.color-custom #disqus_thread a {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom #footer a {
-        color: #88629e;
-    }
-    body.theme-dark.color-custom .github-box .github-box-download .download:hover{
-        border-color: #88629e !important;
-        background-color: rgba(136, 98, 158, 0.4) !important;
-    }
-    body.color-custom.theme-dark #index .post-content a:not(.no-icon), body.color-custom.theme-dark #archive .post-content a:not(.no-icon),body.color-custom.theme-dark #post .post-content a:not(.no-icon) {
-        color: #88629e;
-    }
-    body.color-custom.theme-dark li.index-menu-item.current>a.index-menu-link {
-        color: #88629e;
-        border-left: .125rem solid #88629e;
-    }
-    body.color-custom.theme-dark .sp-progress {
-        background: linear-gradient(45deg, rgba(136, 98, 158, 0), rgba(136, 98, 158, 0.1) 25%, rgba(136, 98, 158, 0.35) 50%, rgb(136, 98, 158) 75%, rgba(136, 98, 158, 0.1));
-    }
-
-    body.color-custom.theme-dark .post-content .content-file:hover .content-file-icon,
-    body.color-custom.theme-dark .post-content .content-file:hover .content-file-filename,
-    body.color-custom.theme-dark .comment-content .content-file:hover .content-file-icon,
-    body.color-custom.theme-dark .comment-content .content-file:hover .content-file-filename {
-        color: #88629e;
-    }
-    body.color-custom.theme-dark .post-content .content-file:hover,
-    body.color-custom.theme-dark .comment-content .content-file:hover {
-        border-color: #88629e;
-    }
-
-    /*桌面端*/
-    body.color-custom #index .post .post-title:hover,body.color-custom #archive .post .post-title:hover {
-        color: #88629e;
-    }
-    body.color-custom.theme-dark #index .post .post-title:hover,body.color-custom.theme-dark #archive .post .post-title:hover {
-        color: #88629e;
-    }
-</style>
 <script>
-    var _czc = _czc || [];
-    var _hmt = _hmt || [];
+/*Initial Variables*/
+var mashiro_option = new Object();
+var mashiro_global = new Object();
+mashiro_option.NProgressON = true;
+
+mashiro_option.live_search = false;
+/*wallpaper*/
+mashiro_option.skin_bg0 = "none";
+mashiro_option.skin_bg1 = "https://jsdelivr.zankyo.cc/gh/spirit1431007/cdn@1.6/img/sakura.png";
+mashiro_option.skin_bg2 = "https://jsdelivr.zankyo.cc/gh/spirit1431007/cdn@1.6/img/plaid2dbf8.jpg";
+mashiro_option.skin_bg3 = "https://jsdelivr.zankyo.cc/gh/spirit1431007/cdn@1.6/img/star02.png";
+mashiro_option.skin_bg4 = "https://jsdelivr.zankyo.cc/gh/spirit1431007/cdn@1.6/img/kyotoanimation.png";
+mashiro_option.skin_bg5 = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fa593e976cbe32eaa7704ad37d61399e402fbe468.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661157808&t=ab1d63f6569026b881fd52b384f09b4d";
+mashiro_option.skin_bg6 = "";
+mashiro_option.skin_bg7 = "";
+
+mashiro_option.land_at_home = true;
+
+mashiro_option.baguetteBoxON = false;
+
+mashiro_option.clipboardCopyright = false;
+
+mashiro_option.entry_content_theme_src = "https://zankyo.cc/wp-content/themes/Sakura/cdn/theme/sakura.css?3.3.23.5.0";
+mashiro_option.entry_content_theme = "sakura";
+
+mashiro_option.jsdelivr_css_src = "https://zankyo.cc/wp-content/themes/Sakura/cdn/css/lib.css?3.3.23.5.0";
+mashiro_option.float_player_on = true;
+
+
+/*End of Initial Variables*/
+</script>
+
+<script type="text/javascript">
+if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+  alert('朋友，IE浏览器未适配哦~ 如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+}
+
 </script>
 </head>
-<body class="theme-white color-custom card  desktop windows chrome not-safari wrap-code open use-navbar">
-    <script>
-        loadPrefersDarkModeState();
-        if (LocalConst.USE_MIRAGES_DARK || LocalConst.PREFERS_DARK_MODE) {
-            var body = document.querySelector("body");
-            body.classList.remove('theme-white');
-            body.classList.add('theme-dark');
-            body.classList.add('dark-mode');
+<body data-rsssl=1 class="home blog group-blog hfeed chinese-font  ">
+	<div class="scrollbar" id="bar"></div>
+	<section id="main-container">
+				<div class="headertop filter-dot">
+			<figure id="centerbg" class="centerbg">
+	<div class="focusinfo">
+        	     <div class="header-tou"><a href="https://lyriceic.rth1.one/" ><img src="http://img1.baidu.com/it/u=2309809068,176271241&fm=253&app=120&f=JPEG?w=800&h=800"></a></div>
+	  			<div class="header-info">
+            <p>初二蒟蒻学生 LyricEic</p>
+                    </div>
+        		<div class="top-social">
+		
+				<li><a href="https://github.com/LyricEic" target="_blank" class="social-github" title="github"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png"/></a></li>
+			
+					
+				<li class="qq"><a href="tencent://message/?uin=1091724022" title="Initiate chat ?"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/qq.png"/></a></li>
+			
+				 
+			
+				<li><a href="https://space.bilibili.com/1244811200" target="_blank" class="social-bili" title="bilibili"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/bilibili.png"/></a></li>
+									
+			
+					<li><a onclick="mail_me()" class="lyriceic@163.com" title="E-mail"><img src="https://jsdelivr.zankyo.cc/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg"/></a></li>
+				
+				
+			
+		
+	  	</div>
+        	</div>
 
-            if (LocalConst.USE_MIRAGES_DARK) {
-                body.classList.remove('dark-mode');
-            } else if (LocalConst.PREFERS_DARK_MODE) {
-                body.classList.add('os-dark-mode');
-            }
-        }
-    </script>
-<!--[if lt IE 9]>
-<div class="browse-happy" role="dialog">当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.</div>
-<![endif]-->
-<div class="sp-progress"></div>
-<div id="wrap">
-    <span id="backtop" class="waves-effect waves-button"><i class="fa fa-angle-up"></i></span>
-    <header>
-    <a id="toggle-nav" class="btn btn-primary" href="javascript:void(0);"><span>MENU</span></a>
-<nav id="site-navigation" class="sidebar no-user-select" role="navigation">
-    <div id="nav">
-        <div class="author navbar-header">
-            <a href="http://c0lacan.net/about.html">
-                <img src="https://cdn.c0lacan.net/outlinks/c0lacan.png" alt="Avatar" width="100" height="100"/>
+			
+	</figure>
+<div id="video-container" style="display:none;"><video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto"></video><div id="video-btn" class="loadvideo videolive"></div><div id="video-add"></div><div class="video-stu"></div></div>		</div>	
+				<div id="page" class="site wrapper">
+		<header class="site-header no-select is-homepage gizle sabit" role="banner">
+				<div class="site-top">
+					<div class="site-branding">
+												<div class="site-title">
+							
+						</div>
+						<!-- logo end -->
+					</div><!-- .site-branding -->
+					<div class="lower-cantiner">
+                <div class="lower lower_mod">                    <nav class="mobile-fit-control hide"><ul id="menu-%e5%bf%ab%e9%80%9f%e5%af%bc%e8%88%aa" class="menu"><li class="current-menu-item"><a href="https://lyriceic.rth1.one/" aria-current="page"><i class="fa fa-fort-awesome" aria-hidden="true"></i> 首页</a>
+<ul class="sub-menu">
+	
+</ul></nav><!-- #site-navigation -->
+                </div>
+					</div>	
+				</div>
+				  <div class="header-user-avatar">
+  
+      <img class="faa-shake animated-hover" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/none.png" width="30" height="30">
+    </a>
+    
+     
+    </div>
+  </div>
+              
+        			</header><!-- #masthead -->
+			<div class="blank"></div>		    <div id="content" class="site-content">
+   
+   	<div class="notice" style="margin-top:60px">
+	   
+	  			<div class="notice-content">Hi there ！👋 07-23 我建站啦，◼ 目前未适配手机端 会部分功能不显示情况， 
+
+
+				联系我: <a target="_blank"class="Link" href="tencent://message/?uin=1091724022">企鹅1091724022</a></p>  
+				
+				
+				
+				</div>
+			</div>
+		
+	<div class="top-feature-row">
+    <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-anchor" aria-hidden="true"></i> Discovery</h1>
+    <div class="top-feature-v2">
+        <div class="the-feature square from_left_and_right">
+            <a href="#" target="_blank">
+                <div class="img"><img src="https://tvax3.sinaimg.cn/large/004kfMibgy1gve46wj97lj63sj2k7x6t02.jpg"></div>
+                <div class="info">
+                    <h3>ERR_404</h3>
+                    <p>There's nothing</p>
+                </div>
             </a>
         </div>
-        <div class="search-box navbar-header">
-            <form class="form" id="search-form" action="http://c0lacan.net/"  role="search">
-                <input id="search" type="text" name="s" required placeholder="搜索..." class="search search-form-input">
-                <button id="search_btn" type="submit" class="search-btn"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <ul id="menu-menu-1" class="menu navbar-nav" data-content="172">
-                        <li class="menu-item"><a href="http://c0lacan.net">首页</a></li>
-            <li>
-                <a class="slide-toggle">分类</a>
-                <div class="category-list hide">
-                                        <ul class="list"><li class="category-level-0 category-parent"><a href="http://c0lacan.net/category/talk/">碎碎念</a></li><li class="category-level-0 category-parent"><a href="http://c0lacan.net/category/Net/">网络通信</a></li><li class="category-level-0 category-parent"><a href="http://c0lacan.net/category/app/">App</a></li><li class="category-level-0 category-parent"><a href="http://c0lacan.net/category/evaluate/">评测</a></li><li class="category-level-0 category-parent"><a href="http://c0lacan.net/category/project/">Project</a></li><li class="category-level-0 category-parent"><a href="http://c0lacan.net/category/headphones/">耳机</a></li></ul>                </div>
-            </li>
-                                    <li class="menu-item"><a class="" href="http://c0lacan.net/bangumi" title="番组计划">番组计划</a></li>
-                        <li class="menu-item"><a class="" href="http://c0lacan.net/friends" title="小伙伴">小伙伴</a></li>
-                        <li class="menu-item"><a class="" href="http://c0lacan.net/phrase" title="言の">言の</a></li>
-                        <li class="menu-item"><a class="" href="http://c0lacan.net/about" title="关于">关于</a></li>
-                    </ul>
     </div>
-                <div id="nav-toolbar">
-            <div class="side-toolbar">
-                <ul class="side-toolbar-list">
-                                            <li><a id="side-toolbar-rss" href="http://c0lacan.net/feed" title="RSS"><i class="fa fa-feed"></i></a></li>
-                                        <li><a id="side-toolbar-github" href="https://github.com/C0lacan" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>                                            <li><a id="side-toolbar-read-settings" href="javascript:void(0);" title="阅读设置"><i class="fa fa-font"></i></a></li>
-                                    </ul>
-                <div class="read-settings-container animated">
-                    <div class="read-settings animated">
-                        <div class="font-size-controls animated">
-                            <button type="button" class="font-size-control control-btn-smaller waves-effect waves-button" data-mode="smaller">A</button>
-                            <button type="button" class="font-size-display" disabled>100%</button>
-                            <button type="button" class="font-size-control control-btn-larger waves-effect waves-button" data-mode="larger">A</button>
-                        </div>
-                        <div class="background-color-controls animated">
-                            <ul>
-                                <li><a href="javascript:void(0)" title="自动模式" class="background-color-control auto selected" data-mode="auto"><i class="fa fa-adjust"></i></a></li>
-                                <li><a href="javascript:void(0)" title="日间模式" class="background-color-control white " data-mode="white"><i class="fa fa-check-circle"></i></a></li>
-                                <li><a href="javascript:void(0)" title="日落模式" class="background-color-control sunset " data-mode="sunset"><i class="fa fa-check-circle"></i></a></li>
-                                <li><a href="javascript:void(0)" title="夜间模式" class="background-color-control dark " data-mode="dark"><i class="fa fa-check-circle"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="font-family-controls">
-                            <button type="button" class="font-family-control  control-btn-serif" data-mode="serif">Serif</button>
-                            <button type="button" class="font-family-control selected control-btn-sans-serif" data-mode="sans-serif">Sans Serif</button>
-                        </div>
-                    </div>
+    <div class="top-feature-v2">
+        <div class="the-feature square from_left_and_right" style="margin: 0 4.5px">
+            <a href="/nageki" target="_blank">
+                <div class="img"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F7Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F96dda144ad345982cd7e3a2a09f431adcaef8496.jpg&refer=http%3A%2F%2Fgss0.baidu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661136586&t=3bae0044cbdca5d9f32d61b19a795d1c"></div>
+                <div class="info">
+                    <h3>ERR_404</h3>
+                    <p>暂时没有东西</p>
                 </div>
-            </div>
-        </div>
-    </nav>
-<!-- Fixed navbar -->
-<nav id="navbar" class="navbar navbar-expand-md navbar-color navbar-md fixed-top no-user-select">
-    <div class="container-fluid">
-                <a class="navbar-brand text-brand" href="http://c0lacan.net">C0lacan's Blog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                                                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dashboard-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        分类                    </a>
-                                        <ul class="dropdown-menu"><li class="dropdown-item category-level-0 category-parent"><a href="http://c0lacan.net/category/talk/">碎碎念</a></li><li class="dropdown-item category-level-0 category-parent"><a href="http://c0lacan.net/category/Net/">网络通信</a></li><li class="dropdown-item category-level-0 category-parent"><a href="http://c0lacan.net/category/app/">App</a></li><li class="dropdown-item category-level-0 category-parent"><a href="http://c0lacan.net/category/evaluate/">评测</a></li><li class="dropdown-item category-level-0 category-parent"><a href="http://c0lacan.net/category/project/">Project</a></li><li class="dropdown-item category-level-0 category-parent"><a href="http://c0lacan.net/category/headphones/">耳机</a></li></ul>                </li>
-                                                                                        <li class="nav-item"><a class="nav-link" href="http://c0lacan.net/bangumi" title="番组计划">番组计划</a></li>
-                                                        <li class="nav-item"><a class="nav-link" href="http://c0lacan.net/friends" title="小伙伴">小伙伴</a></li>
-                                                        <li class="nav-item"><a class="nav-link" href="http://c0lacan.net/phrase" title="言の">言の</a></li>
-                                                        <li class="nav-item"><a class="nav-link" href="http://c0lacan.net/about" title="关于">关于</a></li>
-                                            </ul>
-
-                        <ul class="navbar-nav side-toolbar-list">
-                <li class="navbar-search-container">
-                    <a id="navbar-search" class="search-form-input" href="javascript:void(0);" title="搜索..."><i class="fa fa-search"></i></a>
-                    <form class="search-form" action="http://c0lacan.net/" role="search">
-                        <input type="text" name="s" required placeholder="搜索..." class="search">
-                    </form>
-                </li>
-                <li><a id="nav-side-toolbar-github" href="https://github.com/C0lacan" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>                                    <li>
-                        <a id="nav-side-toolbar-read-settings"  href="javascript:void(0);" title="阅读设置"><i class="fa fa-font"></i></a>
-                        <div class="read-settings-container animated">
-                            <div class="read-settings animated">
-                                <div class="font-size-controls animated">
-                                    <button type="button" class="font-size-control control-btn-smaller waves-effect waves-button" data-mode="smaller">A</button>
-                                    <button type="button" class="font-size-display" disabled>100%</button>
-                                    <button type="button" class="font-size-control control-btn-larger waves-effect waves-button" data-mode="larger">A</button>
-                                </div>
-                                <div class="background-color-controls animated">
-                                    <ul>
-                                        <li><a href="javascript:void(0)" title="自动模式" class="background-color-control auto selected" data-mode="auto"><i class="fa fa-adjust"></i></a></li>
-                                        <li><a href="javascript:void(0)" title="日间模式" class="background-color-control white " data-mode="white"><i class="fa fa-check-circle"></i></a></li>
-                                        <li><a href="javascript:void(0)" title="日落模式" class="background-color-control sunset " data-mode="sunset"><i class="fa fa-check-circle"></i></a></li>
-                                        <li><a href="javascript:void(0)" title="夜间模式" class="background-color-control dark " data-mode="dark"><i class="fa fa-check-circle"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="font-family-controls">
-                                    <button type="button" class="font-family-control  control-btn-serif" data-mode="serif">Serif</button>
-                                    <button type="button" class="font-family-control selected control-btn-sans-serif" data-mode="sans-serif">Sans Serif</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                            </ul>
+            </a>
         </div>
     </div>
-</nav>    </header>
-    
-    <div id="body">
-        <style type="text/css">
-    /** 页面样式调整 */
-        @media(max-width: 767px) {
-        body.card #index, body.card #archive {
-            padding: 4rem 3rem 3.5rem;
-        }
-        body.card .container {
-            max-width: 710px;
-        }
-        body.card #index article, body.card #archive article {
-            padding: .9375rem 0 1.25rem;
-        }
-        body.card #index article .post-card-mask, body.card #archive article .post-card-mask {
-            height: 12.5rem;
-        }
-        body.card #index article .post-card-container, body.card #archive article .post-card-container {
-            padding: 1rem 1rem;
-        }
-        .page-navigator {
-            margin-top: 2rem;
-        }
-    }
-    @media(max-width: 336px) {
-        body.card #index article .post-card-mask, body.card #archive article .post-card-mask {
-            height: 10.5rem;
-        }
-        a.btn, .btn>a {
-            padding: .4375rem 2.25rem;
-        }
-        .page-navigator {
-            margin-top: 1.5rem;
-        }
-    }
-    @media screen and (min-width: 768px) and (max-width: 1301px) {
-        body.card .container {
-            max-width: 720px;
-        }
-    }
-    @media screen and (min-width: 1302px) and (max-width: 1599px) {
-        body.card .container {
-            max-width: 864px;
-        }
-    }
-    @media screen and (min-width: 1600px) and (max-width: 1799px){
-        body.card .container {
-            max-width: 896px;
-        }
-    }
-    @media screen and (min-width: 1800px) and (max-width: 1999px){
-        body.card .container {
-            max-width: 960px;
-        }
-    }
-    @media screen and (min-width: 2000px) and (max-width: 2399px) {
-        body.card .container {
-            max-width: 992px;
-        }
-    }
-    @media screen and (min-width: 2400px) {
-        body.card .container {
-            max-width: 1024px;
-        }
-    }
-                    #qr-box {
-        background-color: transparent;
-    }
-            .post-buttons, #qr-box {
-        display: none;
-    }
-    #body-bottom {
-        margin-top: 0;
-    }
-            
-                .inner {
-        background-color: rgba(0,0,0,0.25);
-    }
-        #masthead {
-        min-height: 12.5rem;
-    }
-                </style>
-<style type="text/css">
-    </style>        <script type="text/javascript">
-            var wrap = document.querySelector('#wrap');
-            var navbar = document.querySelector('#navbar');
-            wrap.classList.remove('display-menu-tree');
-            var body = document.querySelector('body');
-            body.classList.remove('display-menu-tree');
-            LocalConst.TOC_AT_LEFT = false;
-            LocalConst.ENABLE_MATH_JAX = true;
-            LocalConst.ENABLE_FLOW_CHART = false;
-            LocalConst.ENABLE_MERMAID = false;
-            
-                        if (body.classList.contains('no-banner')) {
-                body.classList.remove('no-banner');
-            }                        if (body.classList.contains('content-lang-en')) {
-                body.classList.remove('content-lang-en');
-            }                        if (body.classList.contains('content-serif')) {
-                body.classList.remove('content-serif');
-            }                        if (body.classList.contains('serif-fonts')) {
-                body.classList.remove('serif-fonts');
-            }            LocalConst.SHOW_TOC = false;
-                    </script>
-                                <header id="masthead" class="align-center align-middle " style="
-            height:
-        68;">
-            <div class="blog-background"></div>
-                                                <div class="lazyload-container"></div>
-                    <script type="text/javascript">
-                        var blurBanner = false;                        if (!blurBanner) registLoadBanner();
-                    </script>
-                    <img id="lazyload-img" alt="page banner image" src="https://cdn.c0lacan.net/2019/07/67379432_p0.jpg!/max/64" style="display: none" onload="javascript:loadBanner(this, 'https://cdn.c0lacan.net/2019/07/67379432_p0.jpg', '', document.querySelector('#masthead'), '2', window.screen.availWidth, window.screen.availHeight, blurBanner)">
-                                        <script type="text/javascript">
-                var head = document.querySelector("#masthead");
-                var bgHeight = getBgHeight(window.innerHeight, '68', '68');
-                head.style.height = bgHeight + "px";
-                            </script>
-                        <div class="inner">
-                <div class="container">
-                    <h1 class="blog-title" style=""></h1>
-                    <h2 class="blog-description" style=""></h2>
+    <div class="top-feature-v2">
+        <div class="the-feature square from_left_and_right">
+            <a href="#" target="_blank">
+                <div class="img"><img src="https://img2.baidu.com/it/u=1846123831,1631454178&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=282"></div>
+                <div class="info">
+                    <h3>ERR_404</h3>
+                    <p>Nothing</p>
                 </div>
-            </div>
-                    </header>
-                    <div class="container">
-            <div class="row">
-
-
-
-<div id="index" role="main">
-    	                                <article itemscope itemtype="http://schema.org/BlogPosting" class="">
-                    <div class="display-none" itemscope itemprop="author" itemtype="http://schema.org/Person">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <meta itemprop="url" content="https://c0lacan.net"/>
-                    </div>
-                    <div class="display-none" itemscope itemprop="publisher" itemtype="http://schema.org/Organization">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <div itemscope itemprop="logo" itemtype="http://schema.org/ImageObject">
-                            <meta itemprop="url" content="https://secure.gravatar.com/avatar/c5c7b1057916f6fc452887aed7c3180a?s=50&amp;r=G&amp;d=">
-                        </div>
-                    </div>
-                    <meta itemprop="url mainEntityOfPage" content="http://c0lacan.net/article/631" />
-                    <meta itemprop="dateModified" content="2021-06-27T14:30:43+00:00">
-
-                    <a href="http://c0lacan.net/article/631">
-                                                <div class="post-card" id="post-card-631" >
-                                                                                                <div class="blog-background"></div>
-                                    <div class="lazyload-container"></div>
-                                    <script type="text/javascript">registLoadBanner();</script>
-                                    <meta itemprop="image" content="https://cdn.c0lacan.net/2021/06/537260559.jpg">
-                                    <meta itemprop="thumbnailUrl" content="https://cdn.c0lacan.net/2021/06/537260559.jpg!/max/320">
-                                    <img alt="Thumbnail" src="https://cdn.c0lacan.net/2021/06/537260559.jpg!/max/64" style="display: none" onload="javascript:loadBanner(this, 'https://cdn.c0lacan.net/2021/06/537260559.jpg', '', document.querySelector('#post-card-631'), '2', document.querySelector('#post-card-631').offsetWidth, document.querySelector('#post-card-631').offsetHeight)">
-                                                                                        <div class="post-card-mask">
-                                <div class="post-card-container">
-                                    <h2 class="post-card-title" itemprop="headline">使用Raster和GDAL处理城市土地数据</h2>
-                                    <div class="post-card-info">
-                                                                                <span itemprop="datePublished" content="2021-06-27T22:15:00+00:00">2021 年 06 月 27 日 • </span>
-                                        <span>碎碎念, Project</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                                                <article itemscope itemtype="http://schema.org/BlogPosting" class="">
-                    <div class="display-none" itemscope itemprop="author" itemtype="http://schema.org/Person">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <meta itemprop="url" content="https://c0lacan.net"/>
-                    </div>
-                    <div class="display-none" itemscope itemprop="publisher" itemtype="http://schema.org/Organization">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <div itemscope itemprop="logo" itemtype="http://schema.org/ImageObject">
-                            <meta itemprop="url" content="https://secure.gravatar.com/avatar/c5c7b1057916f6fc452887aed7c3180a?s=50&amp;r=G&amp;d=">
-                        </div>
-                    </div>
-                    <meta itemprop="url mainEntityOfPage" content="http://c0lacan.net/article/623" />
-                    <meta itemprop="dateModified" content="2020-06-23T14:22:06+00:00">
-
-                    <a href="http://c0lacan.net/article/623">
-                                                <div class="post-card" id="post-card-623" >
-                                                                                                <div class="blog-background"></div>
-                                    <div class="lazyload-container"></div>
-                                    <script type="text/javascript">registLoadBanner();</script>
-                                    <meta itemprop="image" content="https://cdn.c0lacan.net/2020/06/1409097222.jpg">
-                                    <meta itemprop="thumbnailUrl" content="https://cdn.c0lacan.net/2020/06/1409097222.jpg!/max/320">
-                                    <img alt="Thumbnail" src="https://cdn.c0lacan.net/2020/06/1409097222.jpg!/max/64" style="display: none" onload="javascript:loadBanner(this, 'https://cdn.c0lacan.net/2020/06/1409097222.jpg', '', document.querySelector('#post-card-623'), '2', document.querySelector('#post-card-623').offsetWidth, document.querySelector('#post-card-623').offsetHeight)">
-                                                                                        <div class="post-card-mask">
-                                <div class="post-card-container">
-                                    <h2 class="post-card-title" itemprop="headline">一瞬间、摇曳心灵的声音。</h2>
-                                    <div class="post-card-info">
-                                                                                <span itemprop="datePublished" content="2020-06-23T22:13:00+00:00">2020 年 06 月 23 日 • </span>
-                                        <span>碎碎念</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                                                <article itemscope itemtype="http://schema.org/BlogPosting" class="">
-                    <div class="display-none" itemscope itemprop="author" itemtype="http://schema.org/Person">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <meta itemprop="url" content="https://c0lacan.net"/>
-                    </div>
-                    <div class="display-none" itemscope itemprop="publisher" itemtype="http://schema.org/Organization">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <div itemscope itemprop="logo" itemtype="http://schema.org/ImageObject">
-                            <meta itemprop="url" content="https://secure.gravatar.com/avatar/c5c7b1057916f6fc452887aed7c3180a?s=50&amp;r=G&amp;d=">
-                        </div>
-                    </div>
-                    <meta itemprop="url mainEntityOfPage" content="http://c0lacan.net/article/587" />
-                    <meta itemprop="dateModified" content="2020-06-22T12:00:47+00:00">
-
-                    <a href="http://c0lacan.net/article/587">
-                                                <div class="post-card" id="post-card-587" >
-                                                                                                <div class="blog-background"></div>
-                                    <div class="lazyload-container"></div>
-                                    <script type="text/javascript">registLoadBanner();</script>
-                                    <meta itemprop="image" content="https://cdn.c0lacan.net/2019/07/70171811_p0.jpg">
-                                    <meta itemprop="thumbnailUrl" content="https://cdn.c0lacan.net/2019/07/70171811_p0.jpg!/max/320">
-                                    <img alt="Thumbnail" src="https://cdn.c0lacan.net/2019/07/70171811_p0.jpg!/max/64" style="display: none" onload="javascript:loadBanner(this, 'https://cdn.c0lacan.net/2019/07/70171811_p0.jpg', '', document.querySelector('#post-card-587'), '2', document.querySelector('#post-card-587').offsetWidth, document.querySelector('#post-card-587').offsetHeight)">
-                                                                                        <div class="post-card-mask">
-                                <div class="post-card-container">
-                                    <h2 class="post-card-title" itemprop="headline">最香降噪耳机Sony WI-1000XM2开箱评测</h2>
-                                    <div class="post-card-info">
-                                                                                <span itemprop="datePublished" content="2020-06-19T20:41:00+00:00">2020 年 06 月 19 日 • </span>
-                                        <span>评测, 耳机</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                                                <article itemscope itemtype="http://schema.org/BlogPosting" class="">
-                    <div class="display-none" itemscope itemprop="author" itemtype="http://schema.org/Person">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <meta itemprop="url" content="https://c0lacan.net"/>
-                    </div>
-                    <div class="display-none" itemscope itemprop="publisher" itemtype="http://schema.org/Organization">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <div itemscope itemprop="logo" itemtype="http://schema.org/ImageObject">
-                            <meta itemprop="url" content="https://secure.gravatar.com/avatar/c5c7b1057916f6fc452887aed7c3180a?s=50&amp;r=G&amp;d=">
-                        </div>
-                    </div>
-                    <meta itemprop="url mainEntityOfPage" content="http://c0lacan.net/article/581" />
-                    <meta itemprop="dateModified" content="2020-06-19T14:53:57+00:00">
-
-                    <a href="http://c0lacan.net/article/581">
-                                                <div class="post-card" id="post-card-581" >
-                                                                                                <div class="blog-background"></div>
-                                    <div class="lazyload-container"></div>
-                                    <script type="text/javascript">registLoadBanner();</script>
-                                    <meta itemprop="image" content="https://cdn.c0lacan.net/2019/07/190781_p0.png">
-                                    <meta itemprop="thumbnailUrl" content="https://cdn.c0lacan.net/2019/07/190781_p0.png!/max/320">
-                                    <img alt="Thumbnail" src="https://cdn.c0lacan.net/2019/07/190781_p0.png!/max/64" style="display: none" onload="javascript:loadBanner(this, 'https://cdn.c0lacan.net/2019/07/190781_p0.png', '', document.querySelector('#post-card-581'), '2', document.querySelector('#post-card-581').offsetWidth, document.querySelector('#post-card-581').offsetHeight)">
-                                                                                        <div class="post-card-mask">
-                                <div class="post-card-container">
-                                    <h2 class="post-card-title" itemprop="headline">脚本小子の娱乐入侵</h2>
-                                    <div class="post-card-info">
-                                                                                <span itemprop="datePublished" content="2020-01-18T01:32:00+00:00">2020 年 01 月 18 日 • </span>
-                                        <span>碎碎念</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                                                <article itemscope itemtype="http://schema.org/BlogPosting" class="">
-                    <div class="display-none" itemscope itemprop="author" itemtype="http://schema.org/Person">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <meta itemprop="url" content="https://c0lacan.net"/>
-                    </div>
-                    <div class="display-none" itemscope itemprop="publisher" itemtype="http://schema.org/Organization">
-                        <meta itemprop="name" content="C0lacan"/>
-                        <div itemscope itemprop="logo" itemtype="http://schema.org/ImageObject">
-                            <meta itemprop="url" content="https://secure.gravatar.com/avatar/c5c7b1057916f6fc452887aed7c3180a?s=50&amp;r=G&amp;d=">
-                        </div>
-                    </div>
-                    <meta itemprop="url mainEntityOfPage" content="http://c0lacan.net/article/541" />
-                    <meta itemprop="dateModified" content="2020-06-19T14:54:20+00:00">
-
-                    <a href="http://c0lacan.net/article/541">
-                                                <div class="post-card" id="post-card-541" >
-                                                                                                <div class="blog-background"></div>
-                                    <div class="lazyload-container"></div>
-                                    <script type="text/javascript">registLoadBanner();</script>
-                                    <meta itemprop="image" content="https://cdn.c0lacan.net/2019/07/269102_p0.png">
-                                    <meta itemprop="thumbnailUrl" content="https://cdn.c0lacan.net/2019/07/269102_p0.png!/max/320">
-                                    <img alt="Thumbnail" src="https://cdn.c0lacan.net/2019/07/269102_p0.png!/max/64" style="display: none" onload="javascript:loadBanner(this, 'https://cdn.c0lacan.net/2019/07/269102_p0.png', '', document.querySelector('#post-card-541'), '2', document.querySelector('#post-card-541').offsetWidth, document.querySelector('#post-card-541').offsetHeight)">
-                                                                                        <div class="post-card-mask">
-                                <div class="post-card-container">
-                                    <h2 class="post-card-title" itemprop="headline">AirPods Pro 胡说八道</h2>
-                                    <div class="post-card-info">
-                                                                                <span itemprop="datePublished" content="2019-11-11T14:47:00+00:00">2019 年 11 月 11 日 • </span>
-                                        <span>评测</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                            <ol class="page-navigator"><li class="current"><a href="http://c0lacan.net/page/1/">1</a></li><li><span></span></li><li><a href="http://c0lacan.net/page/7/">7</a></li><li class="btn btn-primary next"><a href="http://c0lacan.net/page/2/">下一页</a></li></ol></div>
-</div>
-</div>
-<div id="body-bottom">
-</div>
-    </div><!-- end #body -->
-</div><!-- end #wrap -->
-<footer id="footer" role="contentinfo">
-    <div class="container"  data-index="1162">
-        <p>Copyright &copy; 2022 <a href="https://c0lacan.net/">c0lacan's Blog</a> • Powered by <a href="http://typecho.org" target="_blank">Typecho</a> • Theme <a href="https://get233.com/archives/mirages-intro.html" target="_blank">Mirages</a></p>    </div>
-</footer>
-
-<div id="loader-wrapper">
-    <div class="sk-circle">
-        <div class="sk-circle1 sk-child"></div>
-        <div class="sk-circle2 sk-child"></div>
-        <div class="sk-circle3 sk-child"></div>
-        <div class="sk-circle4 sk-child"></div>
-        <div class="sk-circle5 sk-child"></div>
-        <div class="sk-circle6 sk-child"></div>
-        <div class="sk-circle7 sk-child"></div>
-        <div class="sk-circle8 sk-child"></div>
-        <div class="sk-circle9 sk-child"></div>
-        <div class="sk-circle10 sk-child"></div>
-        <div class="sk-circle11 sk-child"></div>
-        <div class="sk-circle12 sk-child"></div>
+            </a>
+        </div>
     </div>
 </div>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">	
+		<h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-envira" aria-hidden="true"></i> Discovery</h1>
+			<article class="post post-list-thumb  post-list-show" itemscope="" itemtype="http://schema.org/BlogPosting">
+		<div class="post-thumb">
+			<a href=""><img class="lazyload" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.1/img/svg/loader/orange.progress-bar-stripe-loader.svg" data-src="https://nananana.net/bcg/84660226_p0_master1200.jpg"></a>
+		</div><!-- thumbnail-->
+		<div class="post-content-wrap">
+			<div class="post-content">
+				<div class="post-date">
+					<i class="iconfont icon-time"></i>发布于 2022-07-21									&nbsp;<i class="iconfont hotpost icon-hot"></i>
+			 						</div>
+				<a href="" class="post-title"><h3>欢迎！</h3></a>
+				<div class="post-meta">
+					<span><i class="iconfont icon-attention"></i>9999 热度</span>
+					<span class="comments-number"><i class="iconfont icon-mark"></i><a href="">NOTHING</a></span>
+					<span><i class="iconfont icon-file"></i><a href="">欢迎</a>
+					</span>
+				</div>
+				<div class="float-content">
+	
+					<p>今天是2022-07-25  天气晴     ◽ ◽ ◽ ◽ ◽ 封面事小鲨鱼Gura~		<div class="post-bottom">
+						<a href="" class="button-normal"><i class="iconfont icon-caidan"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 
-    <script src="http://c0lacan.net/usr/themes/Mirages/static/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
-<script src="http://c0lacan.net/usr/themes/Mirages/js/7.10.2dev4/mirages.main.min.js" type="text/javascript"></script>
-<script type="text/javascript">Mirages.highlightCodeBlock();</script>
+					</div>
+	</div><!-- m-nav-bar -->
+	</section><!-- #section -->
+	
+	
+	</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+	<div class="openNav no-select">
+		<div class="iconflat no-select">	 
+			<div class="icon"></div>
+		</div>
+		<div class="site-branding">
+						
+					</div>
+	</div><!-- m-nav-bar -->
+	</section><!-- #section -->
+	<!-- m-nav-center -->
+	<div id="mo-nav">
+		<div class="m-avatar">
+						<img src="https://zankyo.cc/wp-content/uploads/2021/04/IMG_1006.jpg">
+		</div>
+		<div class="m-search">
+			<form class="m-search-form" method="get" action="https://zankyo.cc" role="search">
+				<input class="m-search-input" type="search" name="s" placeholder="搜索..." required>
+			</form>
+		</div>
 
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-                    skipStartupTypeset: true
+</ul>	</div><!-- m-nav-center end -->
+
+
+
+
+</article>
+		
+        <script type="text/javascript">
+        var settings_Json = '{"live2dLayoutType":true,"modelAPI":"https:\/\/cdn.jsdelivr.net\/gh\/Nana0Nana\/live2d@live2d\/nana\/nana.model3.json","hitokotoAPI":"lwl12.com","modelId":"1","modelTexturesId":"53","modelZoomNumberV2":"3.3","sdkUrl":"https:\/\/cubism.live2d.com\/sdk-web\/cubismcore\/live2dcubismcore.min.js","showToolMenu":true,"canCloseLive2d":true,"canSwitchModel":true,"canSwitchTextures":true,"canSwitchHitokoto":true,"canTakeScreenshot":true,"canTurnToHomePage":true,"canTurnToAboutPage":true,"modelStorage":false,"modelRandMode":"rand","modelTexturesRandMode":"switch","showHitokoto":false,"showF12Status":false,"showF12Message":false,"showF12OpenMsg":false,"showCopyMessage":true,"showWelcomeMessage":true,"waifuSize":{"width":"400","height":"700"},"waifuTipsSize":{"width":"250","height":"70"},"waifuFontSize":12,"waifuToolFont":14,"waifuToolLine":20,"waifuToolTop":20,"waifuMinWidth":768,"waifuEdgeSide":"left","waifuEdgeSize":0,"waifuDraggable":"unlimited","waifuDraggableRevert":false,"homePageUrl":"https:\/\/nananana.net","aboutPageUrl":"#","screenshotCaptureName":"live2d.png","waifuTipsColor":"rgba(236, 217, 188, 0.5)","waifuBorderColor":"rgba(224, 186, 140, 0.62)","waifuShadowColor":"rgba(191, 158, 118, 0.2)","waifuFontsColor":"#32373c","waifuHighlightColor":"#0099cc","waifuToolColor":"#5b6c7d","waifuToolHover":"#34495e","waifuTipTop":0,"defineHitAreaName":[""]}';
+        jQuery(function(){
+            initModel("https://nananana.net/wp-content/plugins/live-2d/assets/waifu-tips.json",JSON.parse(settings_Json));
         });
-    </script>
-    <script src="http://c0lacan.net/usr/themes/Mirages/static/mathjax/2.7.5/MathJax.js" type="text/javascript"></script>
-    <script src="http://c0lacan.net/usr/themes/Mirages/static/mathjax/2.7.5/config/TeX-AMS-MML_SVG.js" type="text/javascript"></script>
+        </script>
+    <script type='text/javascript' src='https://nananana.net/wp-content/plugins/wp-preload-pjax/jquery.preload.js' id='preload-js'></script>
+<script type='text/javascript' src='https://nananana.net/wp-content/plugins/wp-preload-pjax/jquery.pjax.js' id='pjax-js'></script>
+<script type='text/javascript' src='https://nananana.net/wp-content/plugins/wp-preload-pjax/accelerate.js' id='WP-PRELOAD-PJAX-js'></script>
+<script type='text/javascript' id='superpwa-register-sw-js-extra'>
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/superpwa-sw.js","disable_addtohome":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://nananana.net/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js' id='superpwa-register-sw-js'></script>
+<script type='text/javascript' src='https://nananana.net/wp-content/plugins/yuzo-related-post/public/assets/js/pixel-geo.min.js' id='yuzo-pixel-geo-js'></script>
+<script type='text/javascript' id='yuzo-js-js-extra'>
+/* <![CDATA[ */
+var yuzo_vars = {"ajaxurl":"https:\/\/nananana.net\/wp-admin\/admin-ajax.php","post_id":"0","url":"https%3A%2F%2Fnananana.net%2F","where_is":"home","nonce":"f8cfd00b28","nonce2":"be58a78c2b","off_views":"0","off_views_logged":"0","is_logged":"0","allows_to_count_visits":"1","disabled_counter":"0","level_article":"medium"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://nananana.net/wp-content/plugins/yuzo-related-post/public/assets/js/yuzo.min.js' id='yuzo-js-js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.4.0/cdn/js/lib.min.js' id='js_lib-js'></script>
+<script type='text/javascript' id='app-js-extra'>
+/* <![CDATA[ */
+var Poi = {"pjax":"1","movies":"close","windowheight":"auto","codelamp":"close","ajaxurl":"https:\/\/nananana.net\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","reply_link_version":"new","api":"https:\/\/nananana.net\/wp-json\/","nonce":"9a9ab58c33","google_analytics_id":"","gravatar_url":"gravatar.2heng.xin\/avatar"};
+<script type='text/javascript' id='disqus_count-js-extra'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"zankyo"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.22' id='disqus_count-js'></script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/themes/Sakura/cdn/js/lib.js?ver=3.3.23.5.0' id='js_lib-js'></script>
+<script type='text/javascript' id='app-js-extra'>
+/* <![CDATA[ */
+var Poi = {"pjax":"","movies":{"url":"https:\/\/dl.zankyo.cc\/video","name":"av1088051P1,furiko","live":"close"},"windowheight":"auto","codelamp":"close","ajaxurl":"https:\/\/zankyo.cc\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","reply_link_version":"new","api":"https:\/\/zankyo.cc\/wp-json\/","nonce":"ecd25ffd27"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/themes/Sakura/js/sakura-app.js?ver=3.3.2' id='app-js'></script>
+<script type='text/javascript' src='https://jsdelivr.zankyo.cc/github-cards/latest/widget.js?ver=3.3.2' id='github_card-js'></script>
 
-<script type="text/javascript">pangu.spacingElementByClassName('container');</script>
-<script type="text/javascript">Waves.init();</script>
+<div class="changeSkin-gear no-select" style="bottom: -999px;">
+    
+	
+	
+	
+		</figure>
+<div id="video-container" style=""><video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto"></video><div id="video-btn" class="loadvideo videolive"></div><div id="video-add"></div><div class="video-stu"></div></div>		</div>	
+				<div id="page" class="site wrapper">
+			<header class="site-header no-select" role="banner">
+				<div class="site-top">
+					<div class="site-branding">
+					
+		
+  	
+	
 
-<script type="text/javascript">
-    (function ($) {
-                if (typeof registCommentEvent === 'function') {
-            registCommentEvent();
-        }
-                        Mirages.setupLazyLoadImage();
-                        Mirages.setupPage();
-                $('body').pjax('a[href^="http://c0lacan.net"]:not(a[target="_blank"], a[no-pjax])', {
-                container: '#body',
-                fragment: '#body',
-                timeout: 8000
-            }
-        ).on('pjax:click', function() {
-            window.asyncBannerLoadNum = 0;
-            window.asyncBannerLoadCompleteNum = 0;
-            Mirages.doPJAXClickAction();
-                    }).on('pjax:send', function() {
-            Mirages.doPJAXSendAction();
-                    }).on('pjax:complete', function() {
-                        if (typeof registCommentEvent === 'function') {
-                registCommentEvent();
-            }
-                        Mirages.doPJAXCompleteAction();
-                    });
-            })(jQuery);
-        function ExSearchCall(item){
-        if (item && item.length) {
-            // 关闭搜索框
-            $('.ins-close').click();
-            $.pjax({
-                url: item.attr('data-url'),
-                container: '#body',
-                fragment: '#body',
-                timeout: 8000
-            });
-        }
-    }
-    </script>
+			</header><!-- #masthead -->
+			<div class="blank"></div>		    <div id="content" class="site-content">
+   
+   	<div class="notice" style="margin-top:60px">
+	   <i class="iconfont icon-notification"></i>这是一个喇叭
+	  			
+			</div>
+		
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">	
+		<h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-envira" aria-hidden="true"></i> Course</h1>
+			
+		<div class="notice-content"></pre>你好，这里是建站教程，分为以下几个步骤：提要  教程为静态网，也就是网页前端</pre>
+                                                            </pre> <p class="Text"> tips 1.需要一个属于你的网域名，:  Neocities是一个很好地选择，适合新手，免费提供了网域名和建站所需的文件档
+                                                           
+															  </pre> <p class="Text">tips 2.在里面编写网页的程序就可以了，如果是自己开发掌握 HTML，CSS 语言足矣，这里不考虑后端
+                                                            
+															 </pre> <p class="Text">tips 3.如果未掌握任何语言可以自己找网页模板，进行简单修改就可以，Neocities 里的网站也可以进行参考，编写完成你的网站就做好力
+                                                           
+														    </pre> <p class="Text">如果想做动态网，后端开发需要CPP/C和Java这两种语言就够了，另外还需自己购买域名和服务器
+              
+    </div>
+   </div>
+  
 
-</body>
-</html>
+
+
+				
+	</article>
+	
+	<h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;"><i class="" aria-hidden="true"></i> LyricEic</h1>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+	<div class="openNav no-select">
+		<div class="iconflat no-select">	 
+			<div class="icon"></div>
+		</div>
+		<div class="site-branding">
+					
+					</div>
+	</div><!-- m-nav-bar -->
+	</section><!-- #section -->
+	<!-- m-nav-center -->
+	<div id="mo-nav">
+		<div class="m-avatar">
+						<img src="https://zankyo.cc/wp-content/uploads/2021/04/IMG_1006.jpg">
+		</div>
+		<div class="m-search">
+			<form class="m-search-form" method="get" action="https://zankyo.cc" role="search">
+				<input class="m-search-input" type="search" name="s" placeholder="搜索..." required>
+			</form>
+		</div>
+
+<li><a href="https://zankyo.cc/links/">Links</a></li>
+<li><a title="Login，然后Change。" href="https://zankyo.cc/wp-admin/">Login</a></li>
+<li><a title="关于我，你需要知道的一些事情。" href="https://zankyo.cc/about/">About</a></li>
+</ul>	</div><!-- m-nav-center end -->
+	<a class="cd-top faa-float animated "></a>
+	<button onclick="topFunction()" id="moblieGoTop" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+	<!-- search start -->
+	<form class="js-search search-form search-form--modal" method="get" action="https://zankyo.cc" role="search">
+		<div class="search-form__inner">
+					<div class="micro">
+				<p class="micro mb-">想要找点什么呢？</p>
+				<i class="iconfont icon-search"></i>
+				<input class="text-input" type="search" name="s" placeholder="搜索" required>
+			</div>
+				</div>
+		<div class="search_close"></div>
+	</form>
+	<!-- search end -->
+<script type='text/javascript' id='disqus_count-js-extra'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"zankyo"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.22' id='disqus_count-js'></script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/themes/Sakura/cdn/js/lib.js?ver=3.3.23.5.0' id='js_lib-js'></script>
+<script type='text/javascript' id='app-js-extra'>
+/* <![CDATA[ */
+var Poi = {"pjax":"","movies":{"url":"https:\/\/dl.zankyo.cc\/video","name":"av1088051P1,furiko","live":"close"},"windowheight":"auto","codelamp":"close","ajaxurl":"https:\/\/zankyo.cc\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","reply_link_version":"new","api":"https:\/\/zankyo.cc\/wp-json\/","nonce":"ecd25ffd27"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/themes/Sakura/js/sakura-app.js?ver=3.3.2' id='app-js'></script>
+<script type='text/javascript' src='https://jsdelivr.zankyo.cc/github-cards/latest/widget.js?ver=3.3.2' id='github_card-js'></script>
+
+<div class="changeSkin-gear no-select" style="bottom: -999px;">
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="keys">
+        <span id="open-skinMenu">
+		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 |  
+        </span>
+    </div>
+</div>
+<div class="skin-menu no-select">
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="white-bg">
+                <i class="fa fa-television" aria-hidden="true"></i>
+            </li><!--Default-->
+            <li id="sakura-bg">
+                <i class="iconfont icon-sakura"></i>
+            </li><!--Sakura-->
+            <li id="gribs-bg">
+                <i class="fa fa-slack" aria-hidden="true"></i>
+            </li><!--Grids-->
+            <li id="KAdots-bg">
+                <i class="iconfont icon-dots"></i>
+            </li><!--Dots-->
+            <li id="totem-bg">
+                <i class="fa fa-superpowers" aria-hidden="true"></i>
+            </li><!--Orange-->
+            <li id="pixiv-bg">
+                <i class="iconfont icon-pixiv"></i>
+            </li><!--Start-->
+            <li id="bing-bg">
+                <i class="iconfont icon-bing"></i>
+            </li><!--Bing-->
+            <li id="dark-bg">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </li><!--Night-->
+        </ul>
+    </div>
+    <div class="font-family-controls row-container">
+        <button type="button" class="control-btn-serif selected" data-mode="serif" 
+                onclick="mashiro_global.font_control.change_font()">Serif</button>
+        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" 
+                onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
+    </div>
+</div>
+<canvas id="night-mode-cover"></canvas>
+    <div id="aplayer-float" style="z-index: 100;"
+	    class="aplayer"
+        data-id="2535027649"
+        data-server="netease"
+        data-type="playlist"
+        data-fixed="true"
+        data-theme="orange">
+    </div>
+    <style>.skin-menu{left:auto;right:10px;}.changeSkin-gear{left:auto;right:5px;}</style>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<script type='text/javascript' src='https://zankyo.cc/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.22' id='disqus_count-js'></script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/themes/Sakura/cdn/js/lib.js?ver=3.3.23.5.0' id='js_lib-js'></script>
+<script type='text/javascript' id='app-js-extra'>
+/* <![CDATA[ */
+var Poi = {"pjax":"","movies":{"url":"https:\/\/dl.zankyo.cc\/video","name":"av1088051P1,furiko","live":"close"},"windowheight":"auto","codelamp":"close","ajaxurl":"https:\/\/zankyo.cc\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","reply_link_version":"new","api":"https:\/\/zankyo.cc\/wp-json\/","nonce":"ecd25ffd27"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://zankyo.cc/wp-content/themes/Sakura/js/sakura-app.js?ver=3.3.2' id='app-js'></script>
+<script type='text/javascript' src='https://jsdelivr.zankyo.cc/github-cards/latest/widget.js?ver=3.3.2' id='github_card-js'></script>
+
+<div class="changeSkin-gear no-select" style="bottom: -999px;">
+
+
+
+
+
+
+
 
 
